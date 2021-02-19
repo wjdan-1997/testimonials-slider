@@ -1,0 +1,226 @@
+@media screen and (min-width:1000px) {
+    body{
+        background-size: 60%;
+    }
+    .main_containr{
+    height: 100vh;
+    margin: auto;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row-reverse ;
+    align-items: center;
+    justify-content: space-around;
+}
+#hero-img{
+    width: 390px;
+    border-radius:22px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.slider_img{
+    background-image: url(./images/pattern-bg.svg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    justify-content: center;
+    position: relative;
+}
+#prev ,#next {
+    min-width: 2.5rem;
+  
+    background-color: white;
+    border: none;
+    padding: 0.6rem 0;
+    cursor: pointer;
+    outline: none;
+    
+}
+.slider_button{
+    position: absolute;
+    bottom: 60px;
+    left: 190px;
+}
+#next{
+    border-radius: 0 2rem 2rem 0 ;
+}
+#prev{
+    border-radius: 2rem 0 0 2rem ;
+}
+
+/* text */
+.testimonal{
+
+    flex: 1;
+    position: relative;
+    /* display:grid;
+    grid-template-rows: 120px 122px; */
+}
+.testimonal_container{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+}
+#text{
+    text-align: center;
+    font-weight: 500;
+    padding: 3vh 0 2vh 0;
+    background: url(./images/pattern-quotes.svg) no-repeat 50% 0%;
+    background-size: 4rem;
+    transition: opacity 0.33s, transform 0.3s;
+}
+.person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     justify-content: center;
+     padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 3vh;
+
+}
+#name{
+    padding: 0 12px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: opacity 0.3s, transform 0.3s;
+}
+#job{
+    color: gray;
+    font-weight: 500;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.attribution{
+    background-image: url(./images/pattern-quotes.svg);
+    background-size: contain;
+}
+.transition-class {
+    transform: translateX(-50vw);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .transition-last {
+    transform: translateX(50vw);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+}
+
+
+@media screen and (max-width:999px){
+    .main_containr{
+        height: 100vh;
+        margin: auto;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    
+    }
+    #hero-img{
+        width:100%;
+        max-width: 75%;
+        height: auto;
+        border-radius:22px;
+        box-shadow: 0 50px 50px -50px hsl(240deg 38% 20%);
+        transition: opacity 0.3s, transform 0.3s;
+    }
+    .slider_img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding: 4rem 0;
+        background: url(./images/pattern-bg.svg) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .slider_button{
+        position: absolute;
+        left: 9rem;
+        bottom: 3rem;
+       
+    }
+    #prev ,#next {
+        min-width: 1.5rem;
+        
+        background-color: white;
+        border: none;
+        padding: 0.6rem 0;
+        cursor: pointer;
+        outline: none;
+        
+    }
+    #next{
+        border-radius: 0 2rem 2rem 0 ;
+    }
+    #prev{
+        border-radius: 2rem 0 0 2rem ;
+    }
+    
+    /* text */
+    /* .testimonal{
+    
+        flex: 1;
+        position: relative;
+        
+    } */
+    .testimonal_container{
+        /* position: absolute;
+        top: 70%;
+        left: 10%;
+        transform: translateY(-50%); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #text{
+        text-align: center;
+        font-weight: 500;
+        padding: 3vh 0 2vh 0;
+        background: url(./images/pattern-quotes.svg) no-repeat 50% 0%;
+        background-size: 4rem;
+        transition: opacity 0.33s, transform 0.3s;
+    }
+    .person{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         justify-content: center;
+         padding: 0 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        padding-top: 3vh;
+    
+    }
+    #name{
+        padding: 0 12px ;
+        font-weight: 600;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+    #job{
+        color: gray;
+        font-weight: 500;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+    
+    .attribution{
+        background-image: url(./images/pattern-quotes.svg);
+        background-size: contain;
+    }
+
+.transition-class {
+    transform: translateX(-50vw);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .transition-last {
+    transform: translateX(50vw);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+}
